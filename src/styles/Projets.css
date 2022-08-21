@@ -1,0 +1,20 @@
+#projects > div{
+  width: 100%;
+  flex-direction: row;
+  column-gap: 20px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 40% 40% 40%;
+  padding: 10px;
+  justify-content: space-around;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+  top: 50px;
+}

@@ -1,0 +1,94 @@
+/* footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40% 40%;
+	padding: 10px;
+    justify-content: space-around;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    top: 80px;
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+.footer a {
+    display: block;
+    min-width: 120px;
+
+    margin: 10px;
+    padding: 15px 0;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    transition: all 0.3s;
+
+    background-color: #98d65a;
+    box-shadow: 10px 5px 5px 1px rgba(0, 0, 0, 0.678), -10px -5px 2px rgba(236, 9, 9, 0.5);
+    border-radius: 20px;
+}
+
+.footer a img {
+    width: 70px;
+}
+
+.footer a.actif {
+    background-color: #000; 
+    color: #1ABC9C ;
+    border-color: #1ABC9C ; 
+}
+
+.github:hover, #github:hover.actif {
+    background-color: rgba(58, 56, 56, 0.781);
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.instagram:hover, #instagram:hover.actif {
+    background-color: rgb(236, 186, 194);
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.facebook:hover, #facebook:hover.actif {
+    background-color: rgba(33, 31, 192, 0.432);
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.linkedin:hover, #linkedin:hover.actif {
+    background-color: rgba(84, 149, 245, 0.979);
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.discord:hover, #discord:hover.actif {
+    background-color: rgba(38, 24, 231, 0.644);
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.twitter:hover, #twitter:hover.actif {
+    background-color: rgba(0, 172, 193, 0.979);
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.gmail:hover, #gmail:hover.actif {
+    background-color: rgba(134, 10, 10, 0.815);
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+.phone:hover, #phone:hover.actif {
+    background-color: rgba(32, 214, 78, 0.863);
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}

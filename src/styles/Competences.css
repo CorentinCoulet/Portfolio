@@ -1,0 +1,40 @@
+.comp {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    border: 0;
+    margin-top: 20px;
+}
+
+.comp > p {
+    writing-mode: vertical-rl;
+    transform: rotateZ(180deg);
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    border-left: 6px solid var(--second-background-color);
+}
+
+.comp > div {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 1289px){
+    .comp >div {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .comp > p {
+        display: none;
+    }
+}

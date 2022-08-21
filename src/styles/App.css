@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0fa063;
+}
+
+main {
+  flex-grow: 1;
+  background-color: #e8e8e8;
+}

@@ -1,0 +1,18 @@
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-flow: minimax(100px, auto);
+    padding: 0;
+    
+}
+
+.propos {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.descriptif {
+    grid-column: 2;
+    grid-row: 4;
+}

@@ -1,0 +1,78 @@
+.skill{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+.skill:hover{  
+    transform: scale(1.025);
+    box-shadow: 0px 4px 4px rgb(41 41 41 / 25%);
+}
+
+.skill > img{
+    width: 100%;
+}
+
+.skill > div{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.skill > div > p{
+    background-color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    color: #414141;
+    font-weight: bold;
+}
+
+.skill > div > div > p {
+    margin-top: 10px;
+}
+
+.skill > div > div >div {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.skill > div > div >div span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 4px solid #414141;
+}
+
+.skill > div > div >div span.active{
+    background-color: #414141;
+}
+
+@media screen and (max-width: 800px){
+    .skill{
+        width: 150px;
+        height: auto;
+    }
+
+    .skill > div > p{
+        font-size: 1em;
+    }
+    .skill > div > div > p{
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,40 @@
+/* menu */
+
+.menu {
+    display: flex;
+	padding: 0;
+	background-color: #105e06;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    display: block;
+    min-width: 120px;
+
+    margin: 10px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(26, 151, 64);
+    color: aliceblue;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+
+    transition: all 0.3s;
+
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.menu a:hover, .menu a:hover.actif {
+    background-color: #b5b5b5;
+    color: #98d65a;
+    border-color: black;
+}
+
