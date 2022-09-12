@@ -1,5 +1,6 @@
 import "../styles/Projet.css";
 import React, { useState } from "react";
+import Plus from "../assets/plus.svg";
 
 function Project(props){
     const [moreDetails,setMoreDetails] = useState(false);
@@ -12,7 +13,7 @@ function Project(props){
                     e.preventDefault();
                     setMoreDetails(true)
                     document.body.style.overflowY = "hidden";
-                    }}>En savoir plus</a>
+                    }}><img src={Plus} className="plusTaille"/> En savoir plus</a>
             </div>
         </div>
         <div className={moreDetails?"fenetreModale open":"fenetreModale"}>

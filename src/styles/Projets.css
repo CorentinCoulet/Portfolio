@@ -1,4 +1,4 @@
-#projects > div{
+#projects>div {
   width: 100%;
   flex-direction: row;
   column-gap: 20px;
@@ -7,14 +7,20 @@
   justify-content: center;
 }
 
-section {
-  display: grid;
-  grid-template-columns: 40% 40%;
-  grid-template-rows: 40% 40% 40%;
-  padding: 10px;
-  justify-content: space-around;
-  flex-grow: 0;
-  flex-shrink: 0;
-  position: relative;
-  top: 50px;
+.proj {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  width: 1020px;
+  margin: 40px auto;
+}
+
+@media screen and (max-width: 1030px){
+  .proj {
+    width: 100%;
+  }
 }

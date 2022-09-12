@@ -14,6 +14,7 @@ import Linux from "../assets/linux.png";
 import Cplus from "../assets/C++.png";
 import Csharp from "../assets/C#.png";
 import Figma from "../assets/figma.png";
+import Notion from "../assets/notion.png";
 
 function Competences() {
     return <>
@@ -41,6 +42,7 @@ function Competences() {
             <Skill image={Git} nom={"Git"} maitrise={3}/>
             <Skill image={Linux} nom={"Linux"} maitrise={3}/>
             <Skill image={Figma} nom={"Figma"} maitrise={2}/>
+            <Skill image={Notion} nom={"Notion"} maitrise={3}/>
         </div>
     </div>  
     </>

@@ -11,6 +11,11 @@
     position: relative;
 }
 
+.plusTaille {
+    height: 20px;
+    width: 20px;
+}
+
 .project:hover{
     transform: scale(1.025);
 
@@ -40,6 +45,10 @@
 }
 
 .project > div > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     padding: 10px 20px;
     color: var(--second-background-color);
     font-weight: bold;
@@ -50,41 +59,6 @@
     overflow: hidden;
 }
 
-.project > div a::before{
-    content: "";
-display: block;
-width: 100%;
-height: 100%;
-position: absolute;
-bottom: -100%;
-left: 0;
-transition: 0.25s;
-background-color: var(--second-background-color);
-}
-
-.project > div a::after{
-    content: "En savoir plus";
-    font-weight: bold;
-    position: absolute;
-    color: transparent;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    transition: 0.25s;
-}
-
-.project > div > a:hover::after{
-    color: #98d65a;
-}
-
-.project > div > a:hover::before{
-    transform: translateY(-100%);
-}
 
 .project::before {
     content: "";
@@ -179,5 +153,18 @@ background-color: var(--second-background-color);
 @media screen and (max-width: 800px){
     .fenetreModale > .content{
         height: 80%;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .project{
+        width: 200px;
+    }
+    .project > div > p{
+        font-size: small;
+    }
+    
+    .project > div > a{
+        font-size: small;
     }
 }
